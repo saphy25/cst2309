@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000;
+    color: #FFF;
+}
+a.button{
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #FAFF00;
+    background: #FAFF00;
+    padding: 12px 32px;
+}
+a.button:hover{
+    color: #FAFF00;
+    background-color: transparent;
+}
+.header{
+    background-image: url('../images/hero.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.header .navbar-top {
+    padding: 20px;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.header .navbar-top .logo-img{
+    width: 125px;
+}
+.header .navbar-top .nav_menu{
+    display: flex;
+    width: 540px;
+    justify-content: space-around;
+}
+.header .navbar-top .nav_menu .nav_link{
+    color: #FFF;
+    font-size: 14.231px;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.header .navbar-top .nav_menu .nav_link.active,
+.header .navbar-top .nav_menu .nav_link:hover{
+    color: #FAFF00;
+}
+.header .hero-section{
+    padding: 60px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: calc(100vh - 128px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header .hero-section .heading{
+    font-size: 54px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: .9;
+    text-transform: uppercase;
+    max-width:430px;
+    margin-bottom: 35px;
+}
+.header .hero-section a.button{
+    padding: 15px 45px;
+}
+.main-content{
+    max-width: 1150px;
+    margin: auto;
+}
+.reason-section {
+    padding: 40px 10px;
+}
+.reason-section .heading{
+    font-size: 37px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.reason-section .reason-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.reason-section .reason-flex .reason-item{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 420px;
+    margin-bottom: 35px;
+}
+.reason-section .title{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.reason-section .text{
+    font-size: 10.825px;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 309px;
+}
+.gym-membership-section{
+    padding: 40px 10px;
+}
+.gym-membership-section .heading{
+    font-size: 37px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.gym-membership-section .gym-membership-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.payment-form-section .gym-membership-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.gym-membership-section .gym-membership-flex .gym-membership-item{
+    width: 330px;
+    margin-bottom: 35px;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card{
+    border-radius: 10px;
+    background: #222;
+    padding: 40px 15px 60px;
+    max-width: 270px;
+    height: 370px;
+    margin: auto;
+    position: relative;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card .button_div{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 22px;
+    text-align: center;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card .title{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card .price{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card .list-flex-wrapper{
+    padding: 20px 0px;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card .list-flex{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.gym-membership-section .gym-membership-flex .gym-membership-card .list-text{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.about-us-section{
+    padding: 40px 10px;
+}
+.about-us-section .about-us-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px;
+}
+.about-us-section .about-us-item{
+    max-width: 43%;
+}
+.about-us-section .heading{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.about-us-section .text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.about-us-section .about-us-item img{
+    max-width: 100%;
+}
+.testimonial-section{
+    padding: 40px 10px;
+}
+.testimonial-section .heading{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.testimonial-section .testimonial-content{
+    max-width: 930px;
+    margin: auto;
+    position: relative;
+    padding: 0px 60px;
+}
+.testimonial-section #testimonial-wrapper{
+    max-width: 750px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background: #222;
+    padding: 30px 35px 45px;
+}
+.testimonial-section #testimonial-wrapper .testimonial{
+    display: none;
+}
+.testimonial-section #testimonial-wrapper .testimonial.active {
+  display: block;
+}
+.testimonial-section #testimonial-wrapper .testimonial .testimonial-flex {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.testimonial-section #testimonial-wrapper .testimonial .testimonial-flex .img img {
+    width: 64px;
+}
+.testimonial-section #testimonial-wrapper .testimonial .testimonial-flex .name_designation .name{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.8;
+    margin-bottom: 4px;
+}
+.testimonial-section #testimonial-wrapper .testimonial .testimonial-flex .name_designation .designation{
+    color: #757575;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
+.testimonial-section #testimonial-wrapper .testimonial .testimonial-text{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.8;
+    max-width: 530px;
+}
+.testimonial-section .nav-buttons button{
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 39.423px;
+    background: #222;
+    text-align: center;
+    color: #FAFF00;
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 0px;
+    border: 0px;
+}
+.testimonial-section .nav-buttons button.nextTestimonial{
+    right: 10px;
+    left: auto;
+}
+.testimonial-section .dots {
+  text-align: center;
+  margin-top: 26px;
+}
+.testimonial-section .dots .dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #757575;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.testimonial-section .dots .dot.active {
+  background-color: #FAFF00;
+  height: 16px;
+  width: 16px;
+}
+.contact-us-section{
+    padding: 40px 10px;
+}
+.contact-us-section .heading{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.contact-us-section .contact-us-flex{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background: #222;
+}
+.contact-us-section .contact-us-flex .contact-us-item{
+    max-width: 50%;
+    width: 50%;
+}
+.contact-us-section .contact-us-flex .form-content{
+    padding: 24px 30px 24px 24px;
+}
+.contact-us-section .contact-us-flex .form-content .input-group{
+    margin-bottom: 12px;
+}
+.contact-us-section .contact-us-flex .form-content .input-group #errorMessage{
+    display: none;
+}
+.contact-us-section .contact-us-flex .form-content .input-group.error-field #errorMessage{
+    display: inline-block;
+    color: red;
+    font-size: 12px;
+}
+.contact-us-section .contact-us-flex .form-content label{
+    color: #666;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px; 
+    margin-bottom: 6px;
+    display: inline-block;
+}
+.contact-us-section .contact-us-flex .form-content .input-tag{
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #DADBDD;
+    background: #FFF;
+    width: 100%;
+}
+.contact-us-section .contact-us-flex .form-content .submit-button{
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #FAFF00;
+    background: #FAFF00;
+    padding: 12px 32px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+.contact-us-section .contact-us-flex .form-content .submit-button:hover{
+    color: #FAFF00;
+    background-color: transparent;
+}
+.contact-us-section .contact-us-flex .contact-us-item iframe{
+    width: 100%;
+    height: 100%;
+}
+.footer-section{
+    padding: 60px 10px;
+}
+.footer-section .footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-section .footer-flex .footer-item{
+    width: 32%;
+}
+.footer-section .footer-flex .footer-item .footer-logo-img{
+    width: 85px;
+    margin-bottom: 16px;
+}
+.footer-section .footer-flex .footer-item .item-text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 250px;
+}
+.footer-section .footer-flex .footer-item .item-text1{
+    padding-right: 20px;
+}
+.footer-section .footer-flex .footer-item .item-heading{
+    font-size: 19px;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.footer-section .footer-flex .footer-item .item-text2{
+    max-width: 185px;
+}
+.footer-section .footer-flex .footer-item .item-flex{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.footer-section .footer-flex .footer-item .item-flex .social-link{
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+}
+.member-ship-section .heading{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.member-ship-section .contact-us-flex{
+    padding: 40px;
+}
+.member-ship-section .member-ship-item1{
+    flex: 1;
+}
+.member-content{
+    padding: 60px;
+}
+.member-content .title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    max-width: 220px;
+}
+.text-faff00{
+    color: #FAFF00;
+}
+.member-content .text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FAFF00;
+    margin-bottom: 22px;
+}
+.member-content .member-button{
+    margin-bottom: 30px;
+}
+.member-content .title1{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FAFF00;
+    margin-bottom: 15px;
+}
+.member-content .member-flex{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.member-content .member-flex .social-link{
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-decoration: none;
+}
+.member-section .contact-us-item {
+    width: auto;
+    max-width: auto;
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+.header {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    transform-style: inherit;
+    z-index: -1;
+    background-image: none;
+}   
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: block;
+    background: url(../images/hero.png) top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.1);
+    min-height: 100%;
+    z-index: -2;
+}
+.header .hero-section{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    padding: 40px;
+    transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+}
+.bg-000{
+    background: #000;
+}
+
+
+body.open-modal{
+    overflow: hidden;
+}
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    display: none;
+}
+.modal-content {
+    padding: 30px;
+    min-width: 350px;
+    max-height: 90%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #222;
+    position: relative;
+}
+.modal-content .vector-close{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+.modal-content .vector-close button{
+    background-color: transparent;
+    color: #FFF;
+    border: 0px;
+    font-size: 22px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.modal-content .vector-close button:hover{
+    color: #FAFF00;
+}
+.modal-content .content .title {
+    font-size: 22px;
+    padding-right: 28px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.modal-content .content label {
+    color: #666;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 18px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+.modal-content .content .input-tag {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #DADBDD;
+    background: #FFF;
+    width: 100%;
+}
+.modal-content .content .submit-button-div {
+    text-align: end;
+}
+.modal-content .content .submit-button {
+    display: inline-block;
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #FAFF00;
+    background: #FAFF00;
+    padding: 8px 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.modal-content .content .submit-button:hover {
+    color: #FAFF00;
+    background-color: transparent;
+}
+#paySection #creditcard{
+    padding: 20px;
+}
+#paySection #cards{
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    align-items: center;
+}
+#paySection .cardLabel{
+    margin-bottom: 6px;
+}
+#paySection #cards .cardLabel{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 0px;
+}
+#paySection .payflex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+#paySection .payflex label{
+    margin-bottom: 0px;
+}
+#paySection .payflex .right-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#paySection .payflex .right-content input{
+    flex: 1;
+    padding: 8px 12px;
+}
+#paySection #expMonth,
+#paySection #expYear,
+#paySection #cvc{
+    border-radius: 5px;
+    border: 1px solid #DADBDD;
+    background: #FFF;
+    padding: 5px 4px
+}
+@media screen and (max-width: 500px) {
+    .header::before{
+        background-position-x: 66%;
+        min-height: 400px;
+    }
+    .header .navbar-top{
+        padding: 10px;
+        gap: 60px;
+        background: #222;
+    }
+    .header .navbar-top .logo-img {
+        width: 90px;
+    }
+    .header .navbar-top .nav_menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .header .navbar-top .nav_menu .nav_link{
+        text-align: end;
+    }
+    .header .hero-section {
+        padding: 32px;
+        min-height: calc(400px - 70px);
+        left: 60px;
+    }
+    .header .hero-section .heading{
+        max-width: 235px;
+        font-size: 35px;
+        margin-bottom: 12px;
+    }
+    
+    .reason-section .heading{
+        text-align: center;
+    }
+    .reason-section .reason-flex .reason-item{
+        justify-content: center;
+    }
+    .gym-membership-section .gym-membership-flex .gym-membership-item{
+        width: 100%;
+    }
+    .about-us-section .about-us-flex{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .about-us-section .about-us-item{
+        max-width: 100%;
+    }
+    .testimonial-section .testimonial-content{
+        padding: 0px 30px;
+    }
+    .testimonial-section #testimonial-wrapper{
+        padding: 30px 15px 45px;
+    }
+    .testimonial-section .nav-buttons button{
+        left: -8px;
+        transform: scale(0.8);
+    }
+    .testimonial-section .nav-buttons button.nextTestimonial{
+        right: -8px;
+    }
+    .contact-us-section .contact-us-flex .contact-us-item{
+        max-width: 100%;
+        width: 100%;
+    }
+    .contact-us-section .contact-us-flex .form-content {
+        padding: 20px 10px;
+    }
+    .contact-us-section .contact-us-flex .form-content .input-tag{
+        max-width: 50vh;
+    }
+    .contact-us-section .contact-us-flex .form-content .submit-button{
+        margin-top: 10px;
+    }
+    .footer-section .footer-flex .footer-item{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .member-ship-section .contact-us-flex{
+        padding: 0px;
+    }
+    .member-ship-section .member-content{
+        padding: 30px 30px 0px;
+        text-align: center;
+    }
+    .member-content .title{
+        max-width: 100%;
+    }
+    .member-content .member-flex{
+        justify-content: center;
+    }
+    #paySection #creditcard {
+        padding: 20px 10px;
+    }
+}

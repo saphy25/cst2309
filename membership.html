@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Gym To Fit</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="script.js"></script>
+     
+</head>
+<body>
+    <div class="header">
+        <div class="navbar-top">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo.png" class="logo-img">
+            </div>
+            <div class="nav_menu">
+                <a href="index.html" class="nav_link">Home</a>
+                <a href="#" class="nav_link">About</a>
+                <a href="membership.html" class="nav_link active">Pricing</a>
+                <a href="contact-us.html" class="nav_link">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="heading">Become a  member of us </div>
+            <div class="hero-button">
+                <a href="#" class="button">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-000">
+        <div class="main-content">
+            <div class="member-ship-section">
+                <div class="contact-us-section">
+                    <div class="heading">contact  us :</div>
+                    <div class="contact-us-flex">
+                        <div class="member-ship-item">
+                            <div class="member-content">
+                                <div class="title">BECOME A <span class="text-faff00">MEMBER</span></div>
+                                <div class="text">CALL 949-397-2266</div>
+                                <div class="member-button"><a href="#" class="button"  onclick="openModal()">Join Today</a></div>
+                                <div class="title1">FOLLOW US</div>
+                                <div class="member-flex">
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-ship-item1">
+                            <div class="form-content">
+                                <form action="" method="post">
+                                    <div class="input-group">
+                                        <label for="name">First Name <span id="errorMessage">(This field contains only alphabets.)</span></label>
+                                        <input type="text" id="text_only" class="input-tag" name="name" id="name" placeholder="First Name" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="input-tag" name="email" id="email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="number" class="input-tag" name="phone" id="phone" placeholder="(###) ###-####" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="need">What's your need?</label>
+                                        <input type="text" class="input-tag" name="need" id="need" placeholder="- Select -" required>
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="messge">Your Message</label>
+                                        <textarea rows="5" class="input-tag" name="messge" id="messge" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="submit-button-div">
+                                        <input type="submit" class="submit-button" id="submit_button" value="Submit">
+                                    </div>
+                                </form>
+
+                                <section id="paySection">
+                                    <h1>Payment Form</h1>
+                                    <form id="payment" name="payment" method="post" action="">         
+                                       <fieldset id="creditcard">
+                                          <legend>Credit Information</legend>
+                                          <label for="cardName">Name*</label>
+                                          <input name="cardName" class="input-tag" id="cardName" required type="text" />           
+                                          <label>Credit Card*</label>
+                                          <fieldset id="cards">
+                                             <label class="cardLabel">
+                                                <input name="credit" value="amex" type="radio" required />               
+                                                <span>American Express</span>
+                                             </label>
+                                             <label class="cardLabel">               
+                                                <input name="credit" value="discover" type="radio" />
+                                                <span>Discover</span>
+                                             </label>
+                                             <label class="cardLabel">                              
+                                                <input name="credit" value="master" type="radio"  />
+                                                <span>MasterCard</span>
+                                             </label>
+                                             <label class="cardLabel">                                    
+                                                <input name="credit" value="visa" type="radio"  />
+                                                <span>Visa</span>
+                                             </label>
+                                          </fieldset>          
+                              
+                                          <label for="cardNumber">Credit Card Number*</label>
+                                          <input name="cardNumber" class="input-tag" id="cardNumber" required type="text"
+                                                 pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+                                          <div class="payflex">
+                                            <div class="left-content">
+                                                <label for="expMonth">Expiration Date*</label>
+                                                <select id="expMonth" name="expMonth">
+                                                   <option value="mm">mm</option>
+                                                   <option value="01">01</option>
+                                                   <option value="02">02</option>
+                                                   <option value="03">03</option>
+                                                   <option value="04">04</option>
+                                                   <option value="05">05</option>
+                                                   <option value="06">06</option>
+                                                   <option value="07">07</option>
+                                                   <option value="08">08</option>
+                                                   <option value="09">09</option>
+                                                   <option value="10">10</option>
+                                                   <option value="11">11</option>
+                                                   <option value="12">12</option>
+                                                </select>
+                                                <span id="separator"> / </span>
+                                                <select id="expYear" name="expYear">
+                                                   <option value="yy">yy</option>
+                                                   <option value="2022">2022</option>
+                                                   <option value="2023">2023</option>
+                                                   <option value="2024">2024</option>
+                                                   <option value="2025">2025</option>
+                                                   <option value="2026">2026</option>
+                                                </select>   
+                                            </div>
+                                            <div class="right-content">
+                                                <label for="cvc">CVC*</label>
+                                                <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+                                            </div>
+                                          </div>         
+                              
+                                       </fieldset>
+                              
+                                       <p id="footnote">* - Required Item</p>        
+                                       <input type="submit" id="subButton" class="submit-button" value="Submit Payment" />         
+                                    </form>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-section">
+                <div class="heading">What Our Member Say About Us?</div>
+                <div class="testimonial-content">
+                    <div id="testimonial-wrapper">
+                        <div class="testimonial active">
+                            <div class="testimonial-flex">
+                                <div class="img"><img src="assets/images/avatar.png" alt="testimonial image"></div>
+                                <div class="name_designation">
+                                    <div class="name">Jonathan Edward</div>
+                                    <div class="designation">Office Worker</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">“ Join this fitness member, the best choice that I’ve. They’re very professional and give you suggestion about what food and nutrition that you can eat”</div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-flex">
+                                <div class="img"><img src="assets/images/avatar.png" alt="testimonial image"></div>
+                                <div class="name_designation">
+                                    <div class="name">Edward</div>
+                                    <div class="designation">Office Worker</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima autem beatae aliquam architecto impedit nemo tempora quis, possimus provident eaque nostrum animi non iure doloremque enim illum dolores numquam totam.”</div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-flex">
+                                <div class="img"><img src="assets/images/avatar.png" alt="testimonial image"></div>
+                                <div class="name_designation">
+                                    <div class="name">Jonathan</div>
+                                    <div class="designation">Office Worker</div>
+                                </div>
+                            </div>
+                            <div class="testimonial-text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odio minus dolore iure amet, debitis tempora quaerat modi reiciendis adipisci ad omnis fugit dicta officiis neque. Ullam repudiandae quaerat ab.”</div>
+                        </div>
+                    </div>
+                    <div class="dots" id="dot-wrapper"></div>
+                    <div class="nav-buttons">
+                        <button onclick="prevTestimonial()" class="prevTestimonial"><i class="fas fa-arrow-left"></i></button>
+                        <button onclick="nextTestimonial()" class="nextTestimonial"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-flex">
+                    <div class="footer-item">
+                        <div class=""><img src="assets/images/logo.png" alt="Footer Logo" class="footer-logo-img"></div>
+                        <div class="item-text item-text1">Build strength and confidence at our gym with state-of-the-art equipment, personalized training, and a motivating community</div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="item-heading">Address</div>
+                        <div class="item-text item-text2">Republic of Belarus <br> Minsk city <br> Dzerzhinsky Avenue 15</div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="item-heading">Contact</div>
+                        <div class="item-flex">
+                            <div class="icon"><i class="fa fa-phone-alt"></i></div>
+                            <div class="item-text">+98989-909-9090</div>
+                        </div>
+                        <div class="item-flex">
+                            <div class="icon"><i class="far fa-envelope"></i></div>
+                            <div class="item-text">gymtofit@gmail.com</div>
+                        </div>
+                        <div class="item-flex">
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <div class="modal-container" id="joinModal">
+    <div class="modal-content">
+        <div class="vector-close">
+            <button onclick="closeModal()">&times</button>
+        </div>
+        <div class="content">
+            <div class="title">Enter Your Card Information</div>
+            <form action="" method="post">
+                <div class="input-group">
+                    <label for="card_no">Card No</label>
+                    <input type="number" class="input-tag" name="card_no" id="card_no" placeholder="Your card No" required>
+                </div>
+                <div class="submit-button-div">
+                    <input type="submit" class="submit-button" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
